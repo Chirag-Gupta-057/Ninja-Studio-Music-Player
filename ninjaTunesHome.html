@@ -1,0 +1,1017 @@
+<!-- Home Screen For Music Player -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Ninja Tunes
+        </title>
+         <!-- meta tag for responsiveness -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- stylesheet linking -->
+         <!-- font awesome icons -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+         <!-- common colors and font rules -->
+         <link rel="stylesheet" type="text/css" href="css\colors.css">
+         <link rel="stylesheet" type="text/css" href="css\fonts.css">
+         <!-- css for top header -->
+         <link rel="stylesheet" type="text/css" href="css\top-header.css">
+         <!-- css for this page -->
+         <link rel="stylesheet" type="text/css" href="css\ninjaTunes.css">
+         <!-- css for song lists -->
+         <link rel="stylesheet" type="text/css" href="css\list.css">
+         <!-- aside and playbar css -->
+         <link rel="stylesheet" type="text/css" href="css\aside.css">
+         <link rel="stylesheet" type="text/css" href="css\play-bar.css">
+         <!-- song card image animation -->
+         <link rel="stylesheet" type="text/css" href="css\animate-image.css">
+         <!-- media queries -->
+         <link rel="stylesheet" type="text/css" href="css\media.css">
+    </head>
+    <body>
+        <!-- WebPage's top header -->
+        <header>
+
+            <div class="site-logo-container">
+                <!-- site's logo image -->
+                <div class="circular-image-header">
+                    <img src="static/header/ninjaIcon.jpg" alt="logo">
+                </div>
+                <!-- site's name -->
+                <div class="site-name">
+                    <p>Ninja<br><strong>Tunes</strong></p>
+                </div>
+            </div>
+
+            <!-- name of the page -->
+            <div class="site-page-name">
+                <p>Favourites</p>
+            </div>
+
+            <!-- search bar for music -->
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <!-- before search icon -->
+                    <i class="fas fa-search"></i>
+                    <!-- search input -->
+                    <input type="text" id="header-search" placeholder="Search music">
+                    <!-- after voice search icon -->
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+            </div>
+
+            <!-- profile and notifications -->
+            <div class="profile-container">
+                <div class="bell-icon">
+                    <!-- bell icon -->
+                    <i class="fas fa-bell"></i>
+                </div>
+                <!-- profile image -->
+                <div class="circular-image-header">
+                    <img src="static\header\profilePhoto.jpg" alt="profile image">
+                </div>
+            </div>
+
+        </header>
+        <div class="main-content">
+            <!-- main content -->
+            <main>
+                <!-- image caraousel -->
+                <section class="image-carousel">
+                    <div class="carousel-image-container">
+                        <img src="static\caraousel images\edm-hits.jpg" alt="edm">
+                    </div>
+                    <div class="carousel-image-container">
+                        <img src="static\caraousel images\moodHits.jpg" alt="mood">
+                    </div>
+                    <div class="carousel-image-container">
+                        <img src="static\caraousel images\workoutHits.jpg" alt="workout">
+                    </div>
+                </section>
+
+                <!-- music card sections -->
+                <section class="music-sections latest-release">
+                    <h4>Latest Releases</h4>
+                    <div class="music-section-card-container">
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox1" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="song-icons-container">
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                        <p>
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>Play Now</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-plus"></i></span>
+                                            <span>Add To Queue</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-list-ul"></i></span>
+                                            <span>Add To Favourites</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-info-circle"></i></span>
+                                            <span>Get Info</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>4:27</p>
+                            </div>
+    
+                            
+                        </div>
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox2" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="song-icons-container">
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                        <p>
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>Play Now</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-plus"></i></span>
+                                            <span>Add To Queue</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-list-ul"></i></span>
+                                            <span>Add To Favourites</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-info-circle"></i></span>
+                                            <span>Get Info</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>4:27</p>
+                            </div>
+    
+                            
+                        </div>
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox3" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="song-icons-container">
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                        <p>
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>Play Now</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-plus"></i></span>
+                                            <span>Add To Queue</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-list-ul"></i></span>
+                                            <span>Add To Favourites</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-info-circle"></i></span>
+                                            <span>Get Info</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>4:27</p>
+                            </div>
+    
+                            
+                        </div>
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox4" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="song-icons-container">
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                        <p>
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>Play Now</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-plus"></i></span>
+                                            <span>Add To Queue</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-list-ul"></i></span>
+                                            <span>Add To Favourites</span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fas fa-info-circle"></i></span>
+                                            <span>Get Info</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>4:27</p>
+                            </div>
+    
+                            
+                        </div>
+                    </div>
+                </section>
+                <!-- popular artist -->
+                <section class="music-sections artist-release">
+                    <h4>Popular Artist</h4>
+                    <div class="music-section-card-container">
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\ed-sheeran.jpg" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Ed Sheeran</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\imagine.jpg" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Imagine Dragon</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\zayn.jpg" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Zayn</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\coldPlay.png" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Cold Play</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\charlie.jpg" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Charlie Puth</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-details-container">
+                                <div class="release-artist-image">
+                                    <a href="playList.html" target="_blank"><img src="static\Artist-Images\bruno.jpg" alt="artist image"></a>
+                                </div>
+                                <div class="release-artist-details">
+                                    <div class="release-artist-name">
+                                        <p>Bruno Mars</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="music-sections" id="stations-section">
+                    <div id="station-image">
+                        <img src="static\music stations\stations.jpg" alt="station image">
+                    </div>
+                    <div class="station-card">
+                        <div class="station-card-image">
+                            <img src="static\music stations\station1.jpg" alt="station-image">
+                            <div class="station-title">
+                                <p>
+                                    Love
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="station-card">
+                        <div class="station-card-image">
+                            <img src="static\music stations\station2.jpg" alt="station image">
+                            <div class="station-title">
+                                <p>
+                                    Retro
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-image">
+                            <img src="static\music stations\station3.jpg" alt="station image">
+                            <div class="station-title">
+                                <p>
+                                    Workout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- latest english releases -->
+                <section class="music-sections language-release">
+                    <h4>Latest English</h4>
+                    <div class="music-section-card-container">
+                        
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox5" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox5"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox6" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox6"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song5.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox7" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox7"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song6.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox8" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox8"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- latest hindi releases -->
+                <section class="music-sections language-release">
+                    <h4>Latest Hindi</h4>
+                    <div class="music-section-card-container">
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox9" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox9"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song4.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox10" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox10"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song5.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox11" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox11"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="latest-release-card">
+    
+                            <div class="song-details-container">
+
+                                <div class="song-image">
+                                    <img src="static\latest releases\song6.jpg" alt="song image">
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox14" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox14"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Mirage</p>
+                                    </div>
+                                    <div class="release-date">
+                                        <p>June 19, 2019</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+            <!-- playlist aside content -->
+            <aside>
+                <section class="aside-section">
+
+                    <div class="aside-section-title">
+                        <div class="aside-heading">
+                            <h3>Similar Artist</h3>
+                        </div>
+                        <div class="dropdown">
+                            <p>View All</p>
+                            <div class="dropdown-content">
+                                <p>
+                                    <span><i class="fas fa-play"></i></span>
+                                    <span>Play Now</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-plus"></i></span>
+                                    <span>Add To Queue</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-list-ul"></i></span>
+                                    <span>Add To Favourites</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-info-circle"></i></span>
+                                    <span>Get Info</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Pop Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>Get Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>4:27</p>
+                                </div>
+    
+                            </li>
+
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song3.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Rock Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>Get Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>4:27</p>
+                                </div>
+    
+                            </li>
+
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Pop Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>Get Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>4:27</p>
+                                </div>
+    
+                            </li>
+                        </ul>
+
+                            
+                    </div>
+
+                </section>
+
+                <section class="aside-section">
+
+                    <div class="aside-section-title">
+                        <div class="aside-heading">
+                            <h3>Recently Played</h3>
+                        </div>
+                        <div class="dropdown">
+                            <p>View All</p>
+                            <div class="dropdown-content">
+                                <p>
+                                    <span><i class="fas fa-play"></i></span>
+                                    <span>Play Now</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-plus"></i></span>
+                                    <span>Add To Queue</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-list-ul"></i></span>
+                                    <span>Add To Favourites</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-info-circle"></i></span>
+                                    <span>Get Info</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Else</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <i class="far fa-heart"></i>
+                                </div>
+    
+                            </li>
+
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song3.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Else</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <i class="far fa-heart"></i>
+                                </div>
+    
+                            </li>
+
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Else</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <i class="far fa-heart"></i>
+                                </div>
+    
+                            </li>
+
+                            <li>
+    
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Mirage</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Else</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="song-icons-container">
+                                    <i class="far fa-heart"></i>
+                                </div>
+    
+                            </li>
+                        </ul>
+
+                            
+                    </div>
+
+                </section>
+            </aside>
+        </div>
+        <!-- bottom play bar -->
+        <footer class="playbar">
+            <!-- top play bar for responsive screen -->
+            <div class="bar-top-player">
+                <div class="inner-bar"></div>
+            </div>
+            <!-- about the song -->
+            <div class="song-details-container">
+
+                <div class="song-image">
+                    <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                </div>
+                <div class="song-details">
+                    <div class="song-name">
+                        <p>Mirage</p>
+                    </div>
+                    <div class="singer-name">
+                        <p>Else</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="song-icons-container">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban"></i>
+            </div>
+            <!-- play, pause rewind, other controls for song -->
+            <div class="song-player-controls">
+                <div class="control-buttons">
+                    <ul class="horizontal-control-list">
+                        <li><i class="fas fa-random"></i></li>
+                        <li><i class="fas fa-step-backward"></i></li>
+                        <li>
+                            <div class="play-pause">
+                                <input type="checkbox" value="" id="playPauseCheckbox" name="playPauseCheckbox">
+                                <label for="playPauseCheckbox"></label>
+                            </div>
+                        </li>
+                        <li><i class="fas fa-step-forward"></i></li>
+                        <li><i class="fas fa-redo-alt"></i></li>
+                    </ul>
+                </div>
+                <!-- song's progress bar -->
+                <div class="progress-bar">
+                    <span>1:30</span>
+                    <div class="outer-bar">
+                        <div class="inner-bar"></div>
+                    </div>
+                    <span>4:00</span>
+                </div>
+            </div>
+
+            <!-- volume and other controllers -->
+            <div class="volume-bar-controls">
+                <ul class="horizontal-control-list">
+                    <li><i class="fas fa-list-ul"></i></li>
+                    <li><i class="fab fa-bluetooth-b"></i></li>
+                    <li><i class="fas fa-volume-up"></i></li>
+                    <li>
+                        <!-- volume bar for song -->
+                        <div class="progress-bar">
+                            <div class="outer-bar">
+                                <div class="inner-bar"></div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><i class="fas fa-expand-arrows-alt"></i></li>
+                </ul>
+            </div>
+
+        </footer>
+    </body>
+</html>
