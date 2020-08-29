@@ -1,0 +1,25 @@
+/* this file contains color variables for header, playbar and screen contents */
+:root{
+    /* -- main color theme-- */
+    --background-color-theme: #0c1027;
+    --secondary-bg-color: #38479e;
+
+    /* --main text color */
+    --primary-text-color: #dddada;
+    --secondary-text-color: #b3b3b3;
+
+    /* notification alert color */
+    --notification-color: rgb(253, 49, 13);
+
+    /* search bar background color */
+    --search-bar-color: #141b41;
+
+    /* list background popup menu color for playlist */
+    --list-item-bg: #1a1e33;
+    --list-hover-bg: #202439;
+    --list-dropdown-color: #202644;
+
+    /* playbar colors */
+    --playbar-bg-color: #282828;
+    --topbar-bg-color: black;
+}

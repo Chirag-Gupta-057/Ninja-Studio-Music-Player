@@ -1,0 +1,123 @@
+/* CSS rules for top header bar */
+/* css variables for header element */
+:root{
+    /* --header shadow --  */
+    --box-shadow-offset-x: 0px;
+    --box-shadow-offset-y: 45px;
+    --box-shadow-blur: 20px;
+    --box-shadow-spread: 6px;
+    --box-shadow-color: var(--background-color-theme);
+    --box-shadow-inset: inset;
+
+    --circular-border: 14px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* top header */
+header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    background-color: transparent;
+    
+    box-shadow:
+    var(--box-shadow-offset-x)
+    var(--box-shadow-offset-y)
+    var(--box-shadow-blur)
+    var(--box-shadow-spread)
+    var(--box-shadow-color)
+    var(--box-shadow-inset);
+
+    padding: 8px 8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* common css rules for header components */
+.site-logo-container, .site-page-name, .search-bar-container, .profile-container{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: var(--primary-text-color);
+
+    font-family: var(--main-font-family);
+    font-size: var(--primary-font-size);
+}
+/* site's logo and name container */
+.site-logo-container{
+    justify-content: center;
+}
+.circular-image-header{
+    width: 40%;
+    height: inherit;
+
+    background-size: contain;
+    background-position: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circular-image-header img{
+    width: 100%;
+    height: inherit;
+    cursor: pointer;
+}
+.site-name{
+    margin-left: 8px;
+}
+/* header search bar */
+.search-bar-container{
+    flex-grow: 3;
+}
+.search-bar{
+    width: 100%;
+    height: calc(var(--primary-font-size)*2.5);
+    padding: 0px 2px;
+
+    border: 2px solid var(--search-bar-color);
+    border-radius: var(--circular-border);
+
+    background-color: var(--search-bar-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar input[type=text]{
+    display: inline-block;
+    outline: none;
+    border: 0;
+    color: var(--primary-text-color);
+    background-color: var(--search-bar-color);
+    width: 90%;
+    margin: 0px 4px;
+}
+/* profile and notification bell container */
+.bell-icon{
+    cursor: pointer;
+    position: relative;
+}
+.bell-icon::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: var(--notification-color);
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+/* site page name */
+.site-page-name{
+    flex-grow: 2;
+}

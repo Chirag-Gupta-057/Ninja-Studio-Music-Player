@@ -1,0 +1,217 @@
+/* css box model for all elements */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --station-hover-color: #a0abec4d;
+    --station-bg-color: #101642;
+    --station-title-color: #0e063d;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-theme);
+    font-weight: var(--thin-font-weight);
+    color: var(--primary-text-color);
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 100px 25px 12px;
+}
+main{
+    width: 65%;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    
+}
+i:hover{
+    cursor: pointer;
+}
+
+/* main content */
+/* image caraousel */
+main section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 12px auto;
+    color: var(--primary-text-color);
+    font-family: var(--main-font-family);
+}
+main section h4{
+    font-size: var(--primary-font-size);
+    font-weight: var(--thick-font-weight);
+}
+/* image caraousel section */
+main .image-carousel{
+    height: 35vh;
+    justify-content: space-evenly;
+}
+.carousel-image-container{
+    width: 32%;
+    height: 90%;
+    background-size: contain;
+    overflow: hidden;
+    transition: 0.4s all;
+    z-index: 1;
+}
+.carousel-image-container img{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.carousel-image-container:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    filter: brightness(1.5);
+}
+.carousel-image-container:not(:hover){
+    transform: scale(1);
+}
+
+/* music sections */
+.music-sections{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.music-section-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: no-wrap;
+}
+.latest-release .music-section-card-container{
+    flex-wrap: wrap;
+}
+.latest-release-card{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+/* common rules for music sections */
+.music-sections .song-details-container{
+    padding: 4px;
+    flex: 2;
+    
+}
+.music-sections .song-icons-container{
+    flex: 1;
+}
+.music-sections .music-section-card-container .song-image{
+    height: 100%;
+    width: 100%;
+}
+.music-sections .song-icons-container{
+
+    flex-direction: column;
+}
+.music-sections .song-details{
+    width: 75%;
+}
+.music-sections .release-date{
+    font-weight: var(--thin-font-weight);
+    color: var(--secondary-text-color);
+    font-size: var(--secondary-font-size);
+}
+.music-sections .release-date p{
+    margin: 0;
+}
+
+/* language releases music section*/
+.language-release .song-details-container{
+    flex-direction: column;
+}
+/* artist section */
+.artist-release .music-section-card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.artist-release .song-details-container{
+    flex-direction: column;
+}
+.artist-release .release-artist-image{
+    width: 100%; 
+    height: 100%;
+
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.artist-release .release-artist-image img{
+    height: 100%;
+    width: 100%;
+}
+.release-artist-details{
+    text-align: var(--font-align);
+}
+/* music stations section */
+#stations-section{
+    background-color: var(--station-bg-color);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#station-image{
+    width: 15%;
+    height: 90%;
+    margin: 4px 8px -2px 4px;
+    background-size: contain;
+    overflow: hidden;
+}
+#station-image img{
+    width: 100%;
+    height: 100%;
+}
+.station-card{
+    height: 100%;
+    width: 15%;
+    margin: 8px 4px 2px 0px;
+    overflow: hidden;
+}
+.station-card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: contain;
+    max-width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.station-card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.5s all;
+    
+}
+.station-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    color: var(--station-title-color);
+    font-weight: var(--thin-font-weight);
+    background-color: var(--station-hover-color);
+}
+.station-card-image:hover img{
+    transform: scale(1.2);
+}

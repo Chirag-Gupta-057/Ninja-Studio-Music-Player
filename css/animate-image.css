@@ -1,0 +1,52 @@
+/* song card image animation  */
+.song-image{
+    overflow: hidden;
+    position: relative;
+}
+.animate-content{
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+
+    padding: 4px;
+    margin: 8px;
+
+    color: transparent;
+}
+/* play pause button animation */
+.animate-content .play-pause{
+    visibility: hidden;
+    border: 0;
+    padding: 0;
+    border-color: var(--secondary-text-color);
+}
+.animate-content .play-pause label{
+    width: 9px;
+    height: 18px;
+    top: 50%;
+    border-style: solid;
+    border-width: 9px 0px 9px 18px;
+    transition: all 200ms ease;
+}
+input[name=playPauseCheckbox]:checked ~label{
+    border-style: double;
+    border-width: 0px 0px 0px 18px;
+    
+}
+.song-image:hover .play-pause{
+    visibility: visible;
+    color: var(--primary-text-color);
+}
+/* release artist image animation */
+.release-artist-image img{
+    transition: 0.5s all;
+}
+.release-artist-image:hover img{
+    transform: scale(1.2);
+}

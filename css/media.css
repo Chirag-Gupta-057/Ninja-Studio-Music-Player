@@ -1,0 +1,164 @@
+/* media queries */
+@media only screen and (max-width: 824px){
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.6rem;
+        --secondary-font-size: 0.5rem;
+    }
+    /* song list */
+    .artist-details-container{
+        height: 50vh;
+    }
+    .song-icons-container{
+        font-size: var(--secondary-font-size);
+    }
+    .song-details-container .song-image{
+        padding: 0;
+        margin: 0px 2px 0px 0px;
+    }
+    /* ninja tunes music section */
+    .music-sections .song-icons-container{
+        display: none;
+    }
+    .music-sections .song-name{
+        font-size: var(--primary-font-size);
+    }
+    .release-artist-name{
+        font-size: var(--secondary-font-size);
+    }
+    .station-title{
+        font-size: var(--secondary-font-size);
+    }
+    /* playbar section */
+    .playbar i{
+        font-size: var(--secondary-font-size);
+    }
+    .play-pause label{
+        width: 4px;
+        height: 10px;
+        top: 9px;
+        left: 38%;
+        border-width: 0px 0px 0px 10px;
+    }
+    #playPauseCheckbox:checked ~label{
+        border-width: 4px 0px 4px 10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* top header section */
+    header{
+        justify-content: space-evenly;
+    }
+    .site-logo-container, .search-bar-container{
+        display: none;
+    }
+
+    /* play list screen  */
+    /* main container */
+
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.6rem;
+        --secondary-font-size: 0.5rem;
+    }
+    /* song list */
+    .artist-image{
+        width: 45%;
+    }
+    .artist-details div{
+        flex-shrink: 2;
+    }
+    .artist-name-container{
+        margin: 4px 0px;
+    }
+    .playBtn-tracks-details button{
+        width: 90%
+    }
+    .artist-details-container{
+        height: auto;
+    }
+    .artist-details{
+        height: 100%;
+        margin: 0px 2px;
+        padding: 4px 0px;
+        justify-content: space-evenly;
+    }
+    /* ninja tunes station section */
+    .station-title{
+        font-size: var(--primary-font-size);
+    }
+    /* aside section */
+    aside{
+        display: none;
+    }
+
+    /* footer playbar */
+    .playbar{
+        height: 40px;
+        padding: 2px 2px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .bar-top-player{
+        display: block;
+        padding: 0px 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .volume-bar-controls, 
+    .playbar .song-icons-container, 
+    .progress-bar,
+    .horizontal-control-list i
+        {
+            display: none;
+            width: 0;
+        }
+    .play-pause{
+        padding: 0;
+        border: 0;
+    }
+    .play-pause label{
+        top: 2px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.8rem;
+        --secondary-font-size: 0.6rem;
+    }
+    /* song list */
+    .artist-details-container{
+        height: auto;
+        width: 100%;
+    }
+    .artist-details{
+        height: 100%;
+    }
+    #artist-name, #artist-followers{
+        font-size: var(--primary-font-size);
+    }
+    /* station section */
+    .station-title{
+        font-size: var(--secondary-font-size);
+    }
+    /* play bar */
+    .playBtn-tracks-details{
+        width: 60%
+    }
+    .tracks-album-details{
+        width: 100%;
+        text-align: center;
+    }
+    .play-pause label{
+        top: 2px;
+    }
+}  

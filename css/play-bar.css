@@ -1,0 +1,202 @@
+/* CSS rules for playbar */
+/* local color variables for progress bars */
+:root{
+    --incomplete-bar-color: #525252;
+    --complete-bar-color: greenyellow;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* footer play bar */
+.playbar{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    
+    background-color: var(--playbar-bg-color);
+    
+    padding: 8px 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.playbar *{
+    height: 100%;
+}
+/* first container */
+.playbar .song-details-container{
+    width: 250px;
+}
+.playbar .song-details-container *{
+    height: 100%;
+}
+.playbar .song-details-container .song-image{
+    width: 20%;
+}
+.playbar .song-details-container .song-details{
+    width: 50px;
+}
+.playbar .song-details-container .song-details div{
+    margin: 0;
+    height: auto;
+    
+}
+/* -- */
+/* second container */
+.playbar .song-icons-container {
+    height: auto;
+    width: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* -- */
+
+/* third container song player */
+.song-player-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 3;
+    width: auto;
+    height: 100%;
+}
+.control-buttons{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.horizontal-control-list{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--thin-font-weight);
+}
+.horizontal-control-list li{
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--primary-font-size);
+    color: var(--secondary-text-color);
+}
+input[type=checkbox]{
+    visibility: hidden;
+}
+.play-pause{
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50%;
+    padding: 12px;
+    position: relative;
+}
+.play-pause label{
+    display: block;
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    top: 8px;
+    left: 35%;
+    margin: auto;
+
+    /* play state -- pause button */
+    cursor: pointer;
+    border-color: transparent transparent transparent var(--primary-text-color);
+    border-style: double;
+    border-width: 0px 0px 0px 12px;
+    transition: 100ms all ease;
+}
+#playPauseCheckbox:checked ~label{
+    /* pause state -- play button */
+    border-style: solid;
+    border-width: 6px 0px 6px 12px;
+}
+
+/* progress bar */
+.progress-bar{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+}
+.progress-bar>span,.progress-bar>div{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px auto;
+}
+.progress-bar>span{
+    color: var(--primary-text-color);
+    font-size: 10px;
+    font-weight: 100;
+}
+.outer-bar{
+    width: 80%;
+    height: 6px;
+    border-radius: 12.5px;
+    background-color: var(--incomplete-bar-color);
+    cursor: pointer;
+    position: relative;
+}
+.inner-bar{
+    width: 40%;
+    position: absolute;
+    height: inherit;
+    border-radius: 12.5px;
+    background-color: var(--complete-bar-color);
+}
+.inner-bar::after{
+    content: '';
+    position: absolute;
+    left: 95%;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+}
+/* -- */
+
+
+/* fourth container audio controller */
+.volume-bar-controls{
+    flex-grow: 2;
+    margin-top: 12px;
+}
+.volume-bar-controls .progress-bar{
+    width: 50px;
+}
+.volume-bar-controls .progress-bar .outer-bar{
+    margin: 0;
+    width: 100%;
+}
+/* top bar player for responsive screens  */
+.bar-top-player{
+    width: 100%;
+    height: 0.8px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 4;
+    display: none;
+
+    background-color: var(--topbar-bg-color);
+    
+    padding: 0;
+}
+.bar-top-player .inner-bar::after{
+    top: -4px;
+    left: 100%;
+}

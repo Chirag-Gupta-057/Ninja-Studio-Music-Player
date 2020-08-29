@@ -1,0 +1,14 @@
+/* this file contains variables for font size, weight, family and general font properties */
+:root{
+    --main-font-family: sans-serif;
+
+    --primary-font-size: 1rem;
+    --secondary-font-size: 0.6rem;
+
+    --primary-line-height: 16px;
+
+    --thin-font-weight: 100;
+    --thick-font-weight: 700;
+
+    --font-align: center;
+}
